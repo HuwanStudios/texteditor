@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 
+        class="text-xl bg-red-300 text-center -text-2xl">
+        Text Editor
+    </h1>
+
+    <button
+        onclick="document.getElementById('textarea1').style.fontWeight = 'bold';">
+        Bold
+    </button>
+
+    <button
+        onclick="document.getElementById('textarea1').style.fontStyle = 'italic';">
+        Italic
+    </button>
+    <!--text align left, center, right-->
+    <button
+        onclick="document.getElementById('textarea1').style.textAlign = 'left';">
+        left
+    </button>
+
+    <button
+        onclick="document.getElementById('textarea1').style.textAlign = 'center';">
+        center
+    </button>
+
+    <button
+        onclick="document.getElementById('textarea1').style.textAlign = 'right';">
+        right
+    </button>
+    <!--TextTransform-->
+    <button
+        onclick="document.getElementById('textarea1').classList.toggle('text-purple-500');">
+        Colour
+    </button>
+
+    <button 
+        onclick="document.getElementById('textarea1').style.fontSize = '36px';">
+       Font Sizer
+    </button>
+
+    <button
+        onclick="document.getElementById('textarea1').style.fontWeight = 'bold';">
+        B
+    </button>
+
+    <button
+        onclick="document.getElementById('textarea1').style.textDecorationLine = 'underline';">
+        U
+    </button>
+
+    <p id="textarea1">Sample Text</p>
+
+</body>
+</html>
+
+
+<!--
+    solve, display, clear screen
+
+    <script>
+     function myFunction() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    </script>
+
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>   
+    
+    
+    <script>
+     function myFunction() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    </script>
+
+    <button type="button" onclick="myFunction()">Try it</button>   
+
+    <script>
+
+     function solve() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+
+    </script>
+
+    <button type="button" onclick="solve()">Try it</button>  
+
+    <script>
+
+     function display() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+
+    </script>
+
+    <button type="button" onclick="display()">Try it</button>  
+
+    <script>
+
+     function clearScreen() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+
+    </script>
+
+    <button type="button" onclick="clearScreen()">Try it</button>  
+
+-->
