@@ -5,59 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-    <h1 
-        class="text-xl bg-red-300 text-center -text-2xl">
-        Text Editor
-    </h1>
 
-    <button
+</head>
+<body class="md:bg-green-200">
+    <header>
+        <h1 
+            class="text-xl bg-red-300 text-center -text-2xl">
+            Text Editor
+         </h1>
+    </header>
+
+
+    <button 
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.fontWeight = 'bold';">
         Bold
     </button>
 
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.fontStyle = 'italic';">
         Italic
     </button>
     <!--text align left, center, right-->
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.textAlign = 'left';">
         left
     </button>
 
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.textAlign = 'center';">
         center
     </button>
 
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.textAlign = 'right';">
         right
     </button>
     <!--TextTransform-->
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
+        onclick="document.getElementById('textarea1').style.textTransform = 'uppercase';">
+        uppercase
+    </button>
+    <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
+        onclick="document.getElementById('textarea1').style.textTransform = 'lowercase';">
+        lowercase
+    </button>
+    <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
+        onclick="document.getElementById('textarea1').style.textTransform = 'capitalize';">
+        capitalize
+    </button>
+    <!--Colour-->
+    <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').classList.toggle('text-purple-500');">
         Colour
     </button>
 
     <button 
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.fontSize = '36px';">
        Font Sizer
     </button>
 
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.fontWeight = 'bold';">
         B
     </button>
 
     <button
+        class ="p-2 border border-red-300 bg-purple-200 text-red-300"
         onclick="document.getElementById('textarea1').style.textDecorationLine = 'underline';">
         U
     </button>
 
-    <p id="textarea1">Sample Text</p>
+    <div class="bg-neutral-400 m-12 p-6 w-96 h-96 border-4 border-red-300 mx-auto">
+        <textarea class="w-full h-full"  id="textarea1">Sample Text</textarea>
+    </div>
 
 </body>
 </html>
@@ -113,5 +144,8 @@
     </script>
 
     <button type="button" onclick="clearScreen()">Try it</button>  
+
+    button.bg-slate-500.border.h-4.w-4.p-2*9
+    
 
 -->
